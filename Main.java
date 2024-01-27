@@ -7,7 +7,8 @@ public class Main {
 
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub..
+		
+		//create instance of the classes 
 		GeneralCalcuator generalObj = new GeneralCalcuator();
 		GeomatryCalculator geomatryObj = new GeomatryCalculator();
 		TrigonomatryCalculator trygonomatryObj = new TrigonomatryCalculator();
@@ -102,12 +103,19 @@ public class Main {
 				System.out.println("the temperature in fahrenheit.:" +result);
 			}
 		}else if(chooseingNumber == 4) {
-			System.out.println("Coming Soon!");
+			System.out.println("Which operation you want? \n 1.Degree \n 2.Radian");
+			int radianOrDegree = input.nextInt();
+			
+			if(radianOrDegree == 1) {
+				System.out.println("Which Operation You Want? \n 1.sin \n 2.cos \n 3.tan");
+				int operation = input.nextInt();
+				trygonomatryObj.degreeCalc(operation);
+			}else {
+				System.out.println("Which Operation You Want? \n 1.sin \n 2.cos \n 3.tan");
+				int operation = input.nextInt();
+				trygonomatryObj.radianCalc(operation);
+			}
 		}
-
-	
-//		System.out.println("Area of the Tringle is: " + area);
-//		Scanner scan = new Scanner(System.in);
 	}
 
 }
