@@ -25,7 +25,7 @@ public class GeneralCalcuator {
 	}
 	
 	public double remaainder() {
-		divResult = a / b;
+		divResult = a % b;
 		return divResult;
 	}
 }
